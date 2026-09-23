@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A5F" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+  <!-- Icon Symbol: Laptop Screen with Certified Check -->
+  <g transform="translate(10, 10)">
+    <rect x="5" y="5" width="48" height="32" rx="4" fill="url(#logoGrad)" />
+    <rect x="9" y="9" width="40" height="24" rx="2" fill="#0F172A" />
+    <!-- Laptop screen reflection -->
+    <path d="M 12 11 L 35 11 L 20 31 L 12 31 Z" fill="#ffffff" opacity="0.1" />
+    <!-- Laptop Base -->
+    <path d="M 0 38 L 58 38 C 58 42, 54 44, 48 44 L 10 44 C 4 44, 0 42, 0 38 Z" fill="#334155" />
+    <rect x="23" y="38" width="12" height="2" rx="1" fill="#64748B" />
+    <!-- Certified Shield / Sparkle -->
+    <circle cx="46" cy="12" r="9" fill="url(#accentGrad)" />
+    <path d="M 42 12 L 45 15 L 51 9" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <!-- Brand Text -->
+  <text x="78" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#1E3A5F">
+    Dev<tspan fill="#2563EB">Info</tspan><tspan fill="#F59E0B">Tech</tspan>
+  </text>
+  <text x="79" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.5" fill="#64748B">
+    CERTIFIED REFURBISHED LAPTOPS
+  </text>
+</svg>

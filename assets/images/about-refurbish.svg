@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.05" />
+    </linearGradient>
+
+    <linearGradient id="laptopBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <linearGradient id="screenDisplayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <linearGradient id="accentBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="accentGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <linearGradient id="accentAmberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#EAB308" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.4" />
+    </filter>
+
+    <filter id="glowGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="techGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#334155" opacity="0.4" />
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.5" opacity="0.6" />
+    </pattern>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="700" height="500" rx="20" fill="url(#bgGrad)" />
+  <rect width="700" height="500" rx="20" fill="url(#techGrid)" />
+
+  <!-- Ambient Lighting Glows -->
+  <circle cx="350" cy="220" r="220" fill="url(#primaryGlow)" />
+  <circle cx="120" cy="100" r="100" fill="#2563EB" opacity="0.12" filter="url(#glowGlow)" />
+  <circle cx="580" cy="380" r="120" fill="#10B981" opacity="0.1" filter="url(#glowGlow)" />
+
+  <!-- ==================== HEADER BAR ==================== -->
+  <g transform="translate(35, 25)">
+    <rect width="630" height="42" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1" />
+    <!-- Traffic lights -->
+    <circle cx="22" cy="21" r="5" fill="#EF4444" />
+    <circle cx="38" cy="21" r="5" fill="#F59E0B" />
+    <circle cx="54" cy="21" r="5" fill="#10B981" />
+
+    <!-- Terminal title -->
+    <text x="80" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#94A3B8">DEVINFOTECH LABS // 30-POINT HARDWARE DIAGNOSTIC SUITE</text>
+
+    <!-- Status pill -->
+    <rect x="520" y="10" width="95" height="22" rx="11" fill="rgba(16, 185, 129, 0.15)" stroke="#10B981" stroke-width="1" />
+    <circle cx="533" cy="21" r="3.5" fill="#10B981" />
+    <text x="543" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#34D399">ALL PASSED</text>
+  </g>
+
+  <!-- ==================== CENTRAL LAPTOP & DIAGNOSTIC SCREEN ==================== -->
+  <g transform="translate(160, 90)" filter="url(#softShadow)">
+    <!-- Screen Outer Frame -->
+    <rect x="0" y="0" width="380" height="235" rx="12" fill="url(#laptopBodyGrad)" stroke="#475569" stroke-width="1.5" />
+    <!-- Screen Bezel Interior -->
+    <rect x="10" y="10" width="360" height="215" rx="6" fill="url(#screenDisplayGrad)" stroke="#1E293B" stroke-width="1" />
+    
+    <!-- Top Webcam -->
+    <circle cx="190" cy="6" r="2" fill="#0F172A" />
+    <circle cx="190" cy="6" r="1" fill="#38BDF8" opacity="0.6" />
+
+    <!-- Screen Content: Diagnostic Dashboard -->
+    <!-- Mini Top Nav -->
+    <rect x="20" y="20" width="340" height="24" rx="4" fill="#1E293B" />
+    <text x="32" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#E2E8F0">LIVE DIAGNOSTIC TELEMETRY</text>
+    <rect x="290" y="24" width="60" height="15" rx="3" fill="#059669" />
+    <text x="320" y="35" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF">ACTIVE</text>
+
+    <!-- Mini Metric 1: CPU Health -->
+    <g transform="translate(20, 52)">
+      <rect width="105" height="60" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <text x="10" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">CPU &amp; THERMAL</text>
+      <text x="10" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#38BDF8">38°C</text>
+      <text x="56" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#10B981">Optimal</text>
+      <!-- Mini bar -->
+      <rect x="10" y="46" width="85" height="4" rx="2" fill="#0F172A" />
+      <rect x="10" y="46" width="30" height="4" rx="2" fill="#38BDF8" />
+    </g>
+
+    <!-- Mini Metric 2: Memory & Storage -->
+    <g transform="translate(135, 52)">
+      <rect width="110" height="60" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <text x="10" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">NVMe SSD HEALTH</text>
+      <text x="10" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#10B981">100%</text>
+      <text x="60" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#94A3B8">SMART</text>
+      <rect x="10" y="46" width="90" height="4" rx="2" fill="#0F172A" />
+      <rect x="10" y="46" width="90" height="4" rx="2" fill="#10B981" />
+    </g>
+
+    <!-- Mini Metric 3: Battery Capacity -->
+    <g transform="translate(255, 52)">
+      <rect width="105" height="60" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
+      <text x="10" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#94A3B8">BATTERY HEALTH</text>
+      <text x="10" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#F59E0B">94%</text>
+      <text x="48" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#10B981">&gt;80% Pass</text>
+      <rect x="10" y="46" width="85" height="4" rx="2" fill="#0F172A" />
+      <rect x="10" y="46" width="80" height="4" rx="2" fill="#F59E0B" />
+    </g>
+
+    <!-- Oscilloscope / Stress Waveform -->
+    <g transform="translate(20, 122)">
+      <rect width="340" height="92" rx="6" fill="#0B0F19" stroke="#1E293B" stroke-width="1" />
+      <!-- Grid lines -->
+      <line x1="10" y1="30" x2="330" y2="30" stroke="#1E293B" stroke-dasharray="3,3" />
+      <line x1="10" y1="60" x2="330" y2="60" stroke="#1E293B" stroke-dasharray="3,3" />
+      <!-- Wave fill -->
+      <path d="M 10 75 Q 50 20, 90 60 T 170 40 T 250 65 T 330 35 L 330 85 L 10 85 Z" fill="url(#primaryGlow)" />
+      <!-- Wave Line -->
+      <path d="M 10 75 Q 50 20, 90 60 T 170 40 T 250 65 T 330 35" fill="none" stroke="url(#accentBlueGrad)" stroke-width="2.5" />
+      <circle cx="250" cy="65" r="4" fill="#38BDF8" />
+      <circle cx="250" cy="65" r="8" fill="#38BDF8" opacity="0.3" />
+      <text x="16" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="bold" fill="#64748B">VOLTAGE &amp; FREQUENCY STABILITY TEST</text>
+      <text x="250" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="bold" fill="#34D399">STABLE (0 ERRORS)</text>
+    </g>
+
+    <!-- Screen Glass Specular Reflection -->
+    <polygon points="10,10 180,10 60,225 10,225" fill="#FFFFFF" opacity="0.03" />
+
+    <!-- Laptop Base Perspective Deck -->
+    <path d="M -40 235 L 420 235 C 435 235, 445 245, 435 255 L 390 282 C 382 287, 370 290, 350 290 L 30 290 C 10 290, -2 287, -10 282 L -55 255 C -65 245, -55 235, -40 235 Z" fill="url(#laptopBodyGrad)" stroke="#475569" stroke-width="1.5" />
+    <!-- Trackpad -->
+    <rect x="145" y="244" width="90" height="36" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1" />
+    <line x1="190" y1="244" x2="190" y2="280" stroke="#1E293B" stroke-dasharray="2,2" />
+    <!-- Center hinge notch -->
+    <rect x="155" y="235" width="70" height="4" rx="2" fill="#64748B" />
+  </g>
+
+  <!-- ==================== LEFT FLOATING CARD: 30-POINT QC ==================== -->
+  <g transform="translate(30, 115)" filter="url(#badgeShadow)">
+    <rect width="180" height="155" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Header with badge icon -->
+    <rect x="14" y="14" width="32" height="32" rx="8" fill="#2563EB" opacity="0.2" />
+    <path d="M 24 30 L 28 34 L 36 24" fill="none" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="54" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">30-Pt Diagnostic</text>
+    <text x="54" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94A3B8">Strict QC Protocol</text>
+
+    <!-- Checklist items inside floating card -->
+    <g transform="translate(14, 58)">
+      <circle cx="6" cy="6" r="5" fill="#10B981" />
+      <path d="M 4 6 L 5.5 7.5 L 8 4.5" stroke="#FFFFFF" stroke-width="1" fill="none" />
+      <text x="18" y="9" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#E2E8F0">Motherboard &amp; RAM Test</text>
+
+      <circle cx="6" cy="26" r="5" fill="#10B981" />
+      <path d="M 4 26 L 5.5 27.5 L 8 24.5" stroke="#FFFFFF" stroke-width="1" fill="none" />
+      <text x="18" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#E2E8F0">Keyboard &amp; Ports Check</text>
+
+      <circle cx="6" cy="46" r="5" fill="#10B981" />
+      <path d="M 4 46 L 5.5 47.5 L 8 44.5" stroke="#FFFFFF" stroke-width="1" fill="none" />
+      <text x="18" y="49" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#E2E8F0">Display &amp; Pixel Sweep</text>
+
+      <circle cx="6" cy="66" r="5" fill="#10B981" />
+      <path d="M 4 66 L 5.5 67.5 L 8 64.5" stroke="#FFFFFF" stroke-width="1" fill="none" />
+      <text x="18" y="69" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#E2E8F0">Thermal Renewal Applied</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT FLOATING CARD: GRADE A+ CERTIFIED ==================== -->
+  <g transform="translate(485, 115)" filter="url(#badgeShadow)">
+    <rect width="185" height="155" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+
+    <!-- Big Shield Icon -->
+    <g transform="translate(18, 16)">
+      <path d="M 18 2 L 32 8 C 32 20, 18 28, 18 28 C 18 28, 4 20, 4 8 Z" fill="url(#shieldGrad)" />
+      <path d="M 12 14 L 16 18 L 24 10" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    
+    <text x="60" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Grade A+ Certified</text>
+    <text x="60" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#34D399">Ready For Dispatch</text>
+
+    <!-- Specs Pill tags -->
+    <g transform="translate(14, 58)">
+      <rect width="155" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="10" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#94A3B8">OS:</text>
+      <text x="32" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#38BDF8">Genuine Windows 11 Pro</text>
+
+      <rect y="30" width="155" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="10" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#94A3B8">Adapter:</text>
+      <text x="56" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#10B981">Original OEM</text>
+
+      <rect y="60" width="155" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1" />
+      <text x="10" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#94A3B8">Warranty:</text>
+      <text x="62" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#F59E0B">Testing Warranty</text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM PROCESS PIPELINE ==================== -->
+  <g transform="translate(35, 395)" filter="url(#badgeShadow)">
+    <rect width="630" height="82" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1" />
+
+    <!-- Step 1 -->
+    <g transform="translate(20, 16)">
+      <circle cx="25" cy="25" r="20" fill="url(#accentBlueGrad)" />
+      <text x="25" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">01</text>
+      <text x="56" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Direct Sourcing</text>
+      <text x="56" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94A3B8">Tier-1 Corporate Lease Returns</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M 215 41 L 227 41 M 223 37 L 227 41 L 223 45" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Step 2 -->
+    <g transform="translate(240, 16)">
+      <circle cx="25" cy="25" r="20" fill="url(#accentAmberGrad)" />
+      <text x="25" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">02</text>
+      <text x="56" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Deep Diagnostics</text>
+      <text x="56" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94A3B8">30-Pt Stress, Thermal &amp; Logic</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M 435 41 L 447 41 M 443 37 L 447 41 L 443 45" fill="none" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Step 3 -->
+    <g transform="translate(460, 16)">
+      <circle cx="25" cy="25" r="20" fill="url(#accentGreenGrad)" />
+      <text x="25" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">03</text>
+      <text x="56" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Sanitized &amp; Certified</text>
+      <text x="56" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94A3B8">Grade A Finish &amp; Packaged</text>
+    </g>
+  </g>
+</svg>

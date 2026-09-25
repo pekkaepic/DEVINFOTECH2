@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs>
+    <linearGradient id="avGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <rect width="500" height="350" rx="12" fill="#ECFDF5" />
+  
+  <rect x="25" y="25" width="130" height="26" rx="13" fill="#10B981" fill-opacity="0.15" />
+  <text x="90" y="42" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#047857">3-YEAR LICENSE</text>
+
+  <g transform="translate(160, 60)" filter="url(#softShadow)">
+    <rect width="180" height="230" rx="10" fill="url(#avGrad)" />
+    
+    <!-- Shield Icon -->
+    <g transform="translate(65, 30)">
+      <path d="M 25 0 L 50 10 L 50 30 C 50 48, 25 60, 25 60 C 25 60, 0 48, 0 30 L 0 10 Z" fill="#34D399" />
+      <path d="M 18 30 L 23 35 L 34 23" fill="none" stroke="#064E3B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <text x="90" y="125" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">Total Security</text>
+    <text x="90" y="145" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#A7F3D0">Ransomware Shield</text>
+
+    <rect x="25" y="165" width="130" height="25" rx="5" fill="#064E3B" />
+    <text x="90" y="181" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="700" fill="#6EE7B7">1 PC / 3 YEARS KEY</text>
+    
+    <text x="90" y="210" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#A7F3D0">Cloud Protection Active</text>
+  </g>
+</svg>

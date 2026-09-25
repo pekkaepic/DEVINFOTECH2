@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs>
+    <linearGradient id="winGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0078D4" />
+      <stop offset="100%" stop-color="#004E8C" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <rect width="500" height="350" rx="12" fill="#F0F9FF" />
+  
+  <rect x="25" y="25" width="130" height="26" rx="13" fill="#0284C7" fill-opacity="0.15" />
+  <text x="90" y="42" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#0369A1">DIGITAL OEM KEY</text>
+
+  <g transform="translate(160, 60)" filter="url(#softShadow)">
+    <rect width="180" height="230" rx="10" fill="url(#winGrad)" />
+    
+    <!-- Windows 11 Blue 4 Tiles -->
+    <g transform="translate(65, 35)">
+      <rect x="0" y="0" width="22" height="22" rx="2" fill="#FFFFFF" />
+      <rect x="26" y="0" width="22" height="22" rx="2" fill="#FFFFFF" />
+      <rect x="0" y="26" width="22" height="22" rx="2" fill="#FFFFFF" />
+      <rect x="26" y="26" width="22" height="22" rx="2" fill="#FFFFFF" />
+    </g>
+
+    <text x="90" y="125" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">Windows 11</text>
+    <text x="90" y="145" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="700" fill="#BAE6FD">PRO EDITION</text>
+
+    <rect x="30" y="165" width="120" height="25" rx="5" fill="#003E70" />
+    <text x="90" y="181" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#E0F2FE">64-BIT ACTIVATION</text>
+    
+    <text x="90" y="210" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#BAE6FD">BitLocker • Remote Desktop</text>
+  </g>
+</svg>

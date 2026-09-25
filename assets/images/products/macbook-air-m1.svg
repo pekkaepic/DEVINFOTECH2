@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs>
+    <linearGradient id="macChassis" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <filter id="lapShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <rect width="500" height="350" rx="12" fill="#F8FAFC" />
+  
+  <rect x="25" y="25" width="105" height="26" rx="13" fill="#8B5CF6" fill-opacity="0.15" />
+  <text x="77" y="42" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="700" fill="#6D28D9">APPLE M1</text>
+
+  <g transform="translate(50, 40)" filter="url(#lapShadow)">
+    <rect x="50" y="20" width="300" height="190" rx="8" fill="url(#macChassis)" stroke="#475569" stroke-width="1.5" />
+    <rect x="58" y="28" width="284" height="174" rx="4" fill="#000000" />
+    
+    <!-- Apple logo silhouette -->
+    <path d="M 200 100 C 196 95, 201 88, 207 88 C 208 88, 212 90, 214 90 C 216 90, 221 88, 223 88 C 230 88, 235 94, 233 103 C 231 108, 228 114, 224 119 C 220 124, 217 127, 213 127 C 209 127, 207 125, 202 125 C 198 125, 195 127, 191 127 C 187 127, 183 123, 179 118 C 174 110, 171 101, 175 94 C 178 88, 185 85, 191 85 C 195 85, 198 87, 200 87 Z" fill="#FFFFFF" opacity="0.9" transform="translate(-10, 5) scale(0.85)" />
+    <text x="200" y="145" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94A3B8">MacBook Air 13" • Space Grey</text>
+
+    <!-- Wedge shape base -->
+    <path d="M 15 210 L 385 210 C 392 210, 396 216, 390 222 L 350 248 C 345 251, 335 253, 320 253 L 80 253 C 65 253, 55 251, 50 248 L 10 222 C 4 216, 8 210, 15 210 Z" fill="#64748B" />
+    <!-- Large Apple Trackpad -->
+    <rect x="155" y="218" width="90" height="30" rx="3" fill="#475569" stroke="#334155" stroke-width="0.5" />
+  </g>
+</svg>

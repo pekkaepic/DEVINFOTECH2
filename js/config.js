@@ -63,8 +63,8 @@ const SITE_CONFIG = {
   // Text & Copy Content (Matching Business Card)
   content: {
     tagline: "Technology For Every Need",
-    heroTitle: "Refurbished Laptops, Desktops & Accessories",
-    heroSubtitle: "Wide range of tested refurbished laptops, desktops, and all computer accessories from Dell, HP, Apple, Acer & Lenovo. Tested quality products with warranty and best sales & service support.",
+    heroTitle: "Technology For <span class=\"highlight\">Every Need</span>",
+    heroSubtitle: "Wide range of certified refurbished laptops & desktops and genuine computer accessories from Dell, HP, Apple, Acer & Lenovo. Tested quality products with warranty and best sales & service support.",
     aboutShort: "At Dev Infotech, managed by Manisha Saini, we deliver certified refurbished corporate laptops, desktops, and all types of computer accessories in Delhi NCR with complete warranty assurance and trusted after-sales service.",
     footerDescription: "Dev Infotech — Technology For Every Need. Wide range of certified refurbished laptops & desktops, all computer accessories, tested quality with warranty and reliable after-sales service support."
   },

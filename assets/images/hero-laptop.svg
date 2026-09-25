@@ -1,98 +1,164 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 620" width="840" height="620">
   <defs>
+    <!-- Brand Gradients -->
     <linearGradient id="heroGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.05" />
+      <stop offset="0%" stop-color="#0084D6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#62A108" stop-opacity="0.08" />
     </linearGradient>
-    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F172A" />
-      <stop offset="100%" stop-color="#1E293B" />
+    <linearGradient id="techScreenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06213D" />
+      <stop offset="100%" stop-color="#0A1C2E" />
     </linearGradient>
-    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#334155" />
-      <stop offset="100%" stop-color="#1E293B" />
+    <linearGradient id="laptopBezel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
     </linearGradient>
-    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="50%" stop-color="#818CF8" />
-      <stop offset="100%" stop-color="#34D399" />
+    <linearGradient id="brandBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0084D6" />
+      <stop offset="100%" stop-color="#62A108" />
     </linearGradient>
-    <filter id="cardShadow" x="-10%" y="-10%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.18" />
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0084D6" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#62A108" stop-opacity="0.06" />
+    </linearGradient>
+    <filter id="heroShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#06213D" flood-opacity="0.22" />
+    </filter>
+    <filter id="badgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#06213D" flood-opacity="0.15" />
     </filter>
   </defs>
 
-  <!-- Background Decorative Grid & Glow -->
-  <circle cx="400" cy="300" r="260" fill="url(#heroGlow)" />
-  <circle cx="650" cy="150" r="90" fill="#2563EB" opacity="0.08" />
-  <circle cx="150" cy="450" r="110" fill="#F59E0B" opacity="0.08" />
+  <!-- Ambient Backdrop Glows -->
+  <circle cx="420" cy="310" r="280" fill="url(#heroGlow)" />
+  <circle cx="680" cy="160" r="100" fill="#0084D6" opacity="0.1" />
+  <circle cx="160" cy="460" r="120" fill="#62A108" opacity="0.1" />
 
   <!-- Main Laptop Group -->
-  <g transform="translate(100, 70)" filter="url(#cardShadow)">
-    <!-- Screen Lid Back & Bezel -->
-    <rect x="70" y="40" width="460" height="290" rx="16" fill="url(#bezelGrad)" stroke="#64748B" stroke-width="1.5" />
+  <g transform="translate(120, 80)" filter="url(#heroShadow)">
+    
+    <!-- Outer Lid & Metallic Bezel -->
+    <rect x="70" y="30" width="480" height="310" rx="18" fill="url(#laptopBezel)" stroke="#334155" stroke-width="2" />
+    
+    <!-- Webcam & Sensor Notch -->
+    <circle cx="310" cy="44" r="3.5" fill="#06213D" />
+    <circle cx="310" cy="44" r="1.5" fill="#0084D6" />
+    <circle cx="325" cy="44" r="2" fill="#62A108" opacity="0.8" />
+    
     <!-- Inner Screen Display -->
-    <rect x="85" y="55" width="430" height="260" rx="6" fill="url(#screenGrad)" />
+    <rect x="86" y="56" width="448" height="270" rx="8" fill="url(#techScreenGrad)" />
     
-    <!-- Screen Content: Modern Tech UI Graphic -->
-    <circle cx="300" cy="140" r="4" fill="#38BDF8" opacity="0.8" />
-    <circle cx="300" cy="62" r="3" fill="#64748B" />
+    <!-- Screen Header Bar (Dev Infotech Diagnostic OS) -->
+    <rect x="100" y="70" width="420" height="28" rx="6" fill="#102A45" stroke="#1E3A5F" stroke-width="1" />
     
-    <!-- Dashboard Mockup on Laptop Screen -->
-    <!-- Top Bar -->
-    <rect x="100" y="70" width="400" height="20" rx="4" fill="#1E293B" />
-    <circle cx="112" cy="80" r="3.5" fill="#EF4444" />
-    <circle cx="122" cy="80" r="3.5" fill="#F59E0B" />
-    <circle cx="132" cy="80" r="3.5" fill="#10B981" />
-    <rect x="160" y="75" width="160" height="10" rx="3" fill="#334155" />
+    <!-- Window Control Dots -->
+    <circle cx="116" cy="84" r="4" fill="#EF4444" />
+    <circle cx="128" cy="84" r="4" fill="#F59E0B" />
+    <circle cx="140" cy="84" r="4" fill="#62A108" />
+    
+    <!-- Header Title -->
+    <text x="160" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#E1EBF2">
+      Dev Infotech • Hardware Diagnostics &amp; QC Passed
+    </text>
+    <rect x="440" y="76" width="70" height="16" rx="4" fill="#62A108" />
+    <text x="475" y="88" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF">
+      VERIFIED
+    </text>
 
-    <!-- Screen Content Cards -->
-    <rect x="100" y="102" width="120" height="85" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
-    <text x="112" y="125" font-family="sans-serif" font-size="10" font-weight="700" fill="#94A3B8">QC PASS STATUS</text>
-    <text x="112" y="152" font-family="sans-serif" font-size="22" font-weight="800" fill="#10B981">100%</text>
-    <text x="112" y="172" font-family="sans-serif" font-size="9" fill="#64748B">30-Point Checked</text>
+    <!-- UI Metric Cards on Screen -->
+    <!-- Card 1: 30-Point Inspection -->
+    <rect x="100" y="112" width="130" height="92" rx="8" fill="#0A1C2E" stroke="#1E3A5F" stroke-width="1" />
+    <text x="114" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#556B82" letter-spacing="0.5">30+ POINT QC</text>
+    <text x="114" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#62A108">100%</text>
+    <text x="114" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#E1EBF2">Stress Tested</text>
+    <circle cx="210" cy="132" r="6" fill="#62A108" opacity="0.2" />
+    <path d="M 207 132 L 209 134 L 213 130" fill="none" stroke="#62A108" stroke-width="1.5" stroke-linecap="round" />
 
-    <rect x="230" y="102" width="130" height="85" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
-    <text x="242" y="125" font-family="sans-serif" font-size="10" font-weight="700" fill="#94A3B8">AVG SAVINGS</text>
-    <text x="242" y="152" font-family="sans-serif" font-size="22" font-weight="800" fill="#F59E0B">55-60%</text>
-    <text x="242" y="172" font-family="sans-serif" font-size="9" fill="#64748B">vs Brand New</text>
+    <!-- Card 2: Price Savings -->
+    <rect x="245" y="112" width="130" height="92" rx="8" fill="#0A1C2E" stroke="#1E3A5F" stroke-width="1" />
+    <text x="259" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#556B82" letter-spacing="0.5">SAVINGS</text>
+    <text x="259" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#0084D6">Up to 60%</text>
+    <text x="259" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#E1EBF2">vs Brand New</text>
 
-    <rect x="370" y="102" width="130" height="85" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1" />
-    <text x="382" y="125" font-family="sans-serif" font-size="10" font-weight="700" fill="#94A3B8">WARRANTY</text>
-    <text x="382" y="152" font-family="sans-serif" font-size="20" font-weight="800" fill="#38BDF8">6 Mo.</text>
-    <text x="382" y="172" font-family="sans-serif" font-size="9" fill="#64748B">Full Testing Cover</text>
+    <!-- Card 3: Warranty Cover -->
+    <rect x="390" y="112" width="130" height="92" rx="8" fill="#0A1C2E" stroke="#1E3A5F" stroke-width="1" />
+    <text x="404" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#556B82" letter-spacing="0.5">WARRANTY</text>
+    <text x="404" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#62A108">Full Cover</text>
+    <text x="404" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#E1EBF2">Testing Warranty</text>
 
-    <!-- Code / Wave Graph on Screen -->
-    <path d="M 100 240 Q 180 200, 240 250 T 360 210 T 500 240 L 500 295 L 100 295 Z" fill="url(#heroGlow)" opacity="0.6" />
-    <path d="M 100 240 Q 180 200, 240 250 T 360 210 T 500 240" fill="none" stroke="url(#codeGrad)" stroke-width="3" />
+    <!-- Live Performance Waves & Specs Strip -->
+    <rect x="100" y="218" width="420" height="92" rx="8" fill="#08182B" stroke="#1E3A5F" stroke-width="1" />
+    
+    <!-- Visual Performance Wave Graph -->
+    <path d="M 102 270 Q 150 240, 200 265 T 300 245 T 400 260 T 518 240 L 518 308 L 102 308 Z" fill="url(#cardGlow)" />
+    <path d="M 102 270 Q 150 240, 200 265 T 300 245 T 400 260 T 518 240" fill="none" stroke="url(#brandBarGrad)" stroke-width="3" stroke-linecap="round" />
+    
+    <text x="116" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#E1EBF2">
+      Hardware Health: Battery 92%+ • NVMe SSD 100% Health • 16GB RAM Dual Channel
+    </text>
+    <text x="116" y="258" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" fill="#556B82">
+      Lenovo ThinkPad • Dell Latitude • HP EliteBook • Apple MacBook • Acer TravelMate
+    </text>
 
-    <!-- Screen Glass Shine -->
-    <polygon points="85,55 350,55 180,315 85,315" fill="#ffffff" opacity="0.04" />
+    <!-- Screen Glass Sheen Reflection -->
+    <polygon points="86,56 360,56 180,326 86,326" fill="#FFFFFF" opacity="0.04" />
 
-    <!-- Laptop Base / Keyboard deck (Perspective) -->
-    <path d="M 20 330 L 580 330 C 595 330, 605 342, 595 352 L 530 388 C 522 393, 510 395, 490 395 L 110 395 C 90 395, 78 393, 70 388 L 5 352 C -5 342, 5 330, 20 330 Z" fill="#1E293B" stroke="#475569" stroke-width="1" />
-    <!-- Trackpad & Notch -->
-    <rect x="250" y="340" width="100" height="42" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1" />
-    <rect x="270" y="332" width="60" height="3" rx="1.5" fill="#64748B" />
+    <!-- Laptop Base / Keyboard Deck in Perspective -->
+    <path d="M 15 340 L 605 340 C 625 340, 635 354, 625 366 L 555 406 C 545 412, 530 415, 505 415 L 115 415 C 90 415, 75 412, 65 406 L -5 366 C -15 354, -5 340, 15 340 Z" fill="#1E293B" stroke="#475569" stroke-width="1.5" />
+    
+    <!-- Trackpad & Center Notch -->
+    <rect x="255" y="352" width="110" height="48" rx="6" fill="#0A1C2E" stroke="#334155" stroke-width="1" />
+    <rect x="275" y="343" width="70" height="4" rx="2" fill="#64748B" />
   </g>
 
-  <!-- Floating Badge: Quality Certified -->
-  <g transform="translate(60, 280)" filter="url(#cardShadow)">
-    <rect width="210" height="74" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
-    <circle cx="36" cy="37" r="22" fill="#10B981" opacity="0.15" />
-    <circle cx="36" cy="37" r="16" fill="#10B981" />
-    <path d="M 31 37 L 35 41 L 43 32" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-    <text x="68" y="32" font-family="sans-serif" font-size="13" font-weight="700" fill="#1E293B">Grade A+ Certified</text>
-    <text x="68" y="49" font-family="sans-serif" font-size="11" fill="#64748B">Original OEM Parts</text>
+  <!-- Floating Trust Badge 1: Quality Assured (Top Right) -->
+  <g transform="translate(540, 90)" filter="url(#badgeShadow)">
+    <rect width="240" height="84" rx="16" fill="#FFFFFF" stroke="#E1EBF2" stroke-width="1.5" />
+    <!-- Shield Icon -->
+    <rect x="16" y="18" width="48" height="48" rx="12" fill="#62A108" opacity="0.12" />
+    <circle cx="40" cy="42" r="16" fill="#62A108" />
+    <path d="M 33 42 L 38 47 L 48 37" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Content -->
+    <text x="76" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#06213D">
+      Quality Assured
+    </text>
+    <text x="76" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#556B82">
+      Tested with Warranty
+    </text>
   </g>
 
-  <!-- Floating Badge: Ready to Ship -->
-  <g transform="translate(520, 100)" filter="url(#cardShadow)">
-    <rect width="200" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
-    <circle cx="36" cy="35" r="20" fill="#2563EB" opacity="0.12" />
-    <circle cx="36" cy="35" r="14" fill="#2563EB" />
-    <text x="36" y="40" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF">₹</text>
-    <text x="66" y="30" font-family="sans-serif" font-size="13" font-weight="700" fill="#1E293B">Best Price Promise</text>
-    <text x="66" y="47" font-family="sans-serif" font-size="11" fill="#64748B">Starting at ₹19,999</text>
+  <!-- Floating Trust Badge 2: Best Value (Bottom Left) -->
+  <g transform="translate(60, 320)" filter="url(#badgeShadow)">
+    <rect width="230" height="84" rx="16" fill="#FFFFFF" stroke="#E1EBF2" stroke-width="1.5" />
+    <!-- Tag Icon -->
+    <rect x="16" y="18" width="48" height="48" rx="12" fill="#0084D6" opacity="0.12" />
+    <circle cx="40" cy="42" r="16" fill="#0084D6" />
+    <text x="40" y="48" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">
+      ₹
+    </text>
+    <!-- Content -->
+    <text x="76" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#06213D">
+      Save Up to 60%
+    </text>
+    <text x="76" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#556B82">
+      Starting @ ₹19,999
+    </text>
+  </g>
+
+  <!-- Floating Trust Badge 3: Store & Service (Bottom Right) -->
+  <g transform="translate(560, 420)" filter="url(#badgeShadow)">
+    <rect width="240" height="80" rx="16" fill="#FFFFFF" stroke="#E1EBF2" stroke-width="1.5" />
+    <!-- Pin / Support Icon -->
+    <rect x="16" y="16" width="48" height="48" rx="12" fill="#06213D" opacity="0.08" />
+    <circle cx="40" cy="40" r="16" fill="#06213D" />
+    <!-- Star icon -->
+    <path d="M 40 32 L 42.5 37 L 48 38 L 44 42 L 45 47.5 L 40 45 L 35 47.5 L 36 42 L 32 38 L 37.5 37 Z" fill="#62A108" />
+    <!-- Content -->
+    <text x="76" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#06213D">
+      4.9 ★ Customer Rating
+    </text>
+    <text x="76" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#556B82">
+      Delhi NCR Store &amp; Service
+    </text>
   </g>
 </svg>

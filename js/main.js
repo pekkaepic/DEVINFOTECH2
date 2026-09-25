@@ -205,7 +205,7 @@ function initDynamicContent() {
   });
 
   document.querySelectorAll("[data-config='heroTitle']").forEach((el) => {
-    el.textContent = SITE_CONFIG.content.heroTitle;
+    el.innerHTML = SITE_CONFIG.content.heroTitle;
   });
 
   document.querySelectorAll("[data-config='heroSubtitle']").forEach((el) => {
